@@ -35,7 +35,7 @@ async def gemini(
         },
     )
 
-    await interaction.response.send_message(response.choices[0].message.content)
+    await interaction.response.send_message(response.text)
 
 
 if __name__ == "__main__":
