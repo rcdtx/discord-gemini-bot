@@ -35,7 +35,9 @@ async def gemini(
         },
     )
 
-    await interaction.response.send_message(response.text)
+    await interaction.response.send_message(
+        f"_prompt:_\n```{arg}```\n_response:_\n```{response.text}```"
+    )
 
 
 if __name__ == "__main__":
